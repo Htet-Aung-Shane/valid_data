@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <record id="config_act" model="ir.actions.act_window">
+        <field name="name">Data Configuration</field>
+        <field name="res_model">config.data</field>
+		<field name="view_mode">tree</field>
+    </record>
+    <record id="config_data_search" model="ir.ui.view">
+        <field name="name">config_data_search</field>
+        <field name="model">config.data</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="name" string="name" />  
+                <group expand="0" string="Group By">
+                    <filter name="group_by_name" string="Name" context="{'group_by': 'name'}" />
+                    <filter name="group_by_field" string="Field" context="{'group_by': 'field'}" />
+                    <filter name="group_by_null" string="Is Nuallable" context="{'group_by': 'is_nuallable'}" />
+                    <filter name="group_by_is" string="Name" context="{'group_by': 'is_unique'}" />
+                    <filter name="group_by_formula" string="Formula" context="{'group_by': 'allow_formula'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="config_data_tree" model="ir.ui.view">
+        <field name="name">Configuration</field>
+        <field name="model">config.data</field>
+        <field name="arch" type="xml">
+            <tree string="Configuuration">
+                <field name="name"/>
+                <field name="field" />
+                <field name="is_nuallable" />
+                <field name="is_unique" />
+                <field name="allow_formula"/>
+            </tree>
+        </field>
+    </record>
+    
+    </data>
+    
+
+</odoo>
