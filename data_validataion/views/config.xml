@@ -26,7 +26,7 @@
         <field name="name">Configuration</field>
         <field name="model">config.data</field>
         <field name="arch" type="xml">
-            <tree string="Configuuration">
+            <tree string="Configuuration" create="True" edit="True" editable="bottom">
                 <field name="name"/>
                 <field name="field" />
                 <field name="is_nuallable" />

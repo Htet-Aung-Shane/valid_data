@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <menuitem id="mt_data_validation" name="Data Validation" sequence="1" web_icon="data_validation,static/description/icon.png"/>
+    <menuitem id="mt_data_validation" name="Data Validation" sequence="1" web_icon="data_validataion,static/description/icon.png" action="config_act"/>
+    <menuitem id="menu_file_upload" name="Upload" parent="mt_data_validation" action="import_file_action" sequence="2"/>
     <menuitem id="menu_data_configuration" name="Configuration" parent="mt_data_validation" action="config_act" sequence="2"/>
 </odoo>

@@ -7,6 +7,7 @@
     'data' : [
         'security/ir.model.access.csv',
         'views/config.xml',
+        'views/excel_import.xml',
         'views/menu.xml',
     ],
     'category': 'Customizations',
